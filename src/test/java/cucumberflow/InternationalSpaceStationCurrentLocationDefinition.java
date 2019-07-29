@@ -1,16 +1,14 @@
-package stepdefs;
+package cucumberflow;
 
-import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
+import org.hamcrest.Matchers;
 
 import static com.jayway.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.equalTo;
 
 public  class InternationalSpaceStationCurrentLocationDefinition {
 
     public InternationalSpaceStationCurrentLocationDefinition() {
-        RestAssured.baseURI = InternationalSpaceStationCurrentLocationConfiguration.OPEN_NOTIFY_API_URI;
+        baseURI = InternationalSpaceStationCurrentLocationConfiguration.OPEN_NOTIFY_API_URI;
     }
 
     public void requestInternationalSpaceStationCurrentLocation() {
@@ -31,10 +29,10 @@ public  class InternationalSpaceStationCurrentLocationDefinition {
                         when().
                         get("/iss-now/").
                         then().
-                        body(containsString("iss_position")).
-                        body(containsString("message")).
-                        body(containsString("timestamp")).
-                        body(("message"), equalTo("success")).
+                        body(Matchers.containsString("iss_position")).
+                        body(Matchers.containsString("message")).
+                        body(Matchers.containsString("timestamp")).
+                        body(("message"), Matchers.equalTo("success")).
                         extract().response();
     }
 }

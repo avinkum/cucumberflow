@@ -1,14 +1,14 @@
 package stepdefs;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
+import cucumberflow.InternationalSpaceStationCurrentLocationDefinition;
 
 
 public class InternationalSpaceStationCurrentLocationSteps {
 
-    InternationalSpaceStationCurrentLocationDefinition  service;
+    InternationalSpaceStationCurrentLocationDefinition service;
 
     @Given("^I access the ISS Current Location$")
     public void i_access_the_ISS_Current_Location() throws Exception {

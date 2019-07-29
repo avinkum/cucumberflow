@@ -1,4 +1,4 @@
-package stepdefs;
+package cucumberflow;
 
 public abstract class InternationalSpaceStationCurrentLocationConfiguration {
 
