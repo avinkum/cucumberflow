@@ -12,7 +12,7 @@
     <portlet-name>com.cucumberflow</portlet-name>
     <display-name>com.cucumberflow Portlet</display-name>
 
-    <portlet-class>cucumberflow.com.cucumberflow</portlet-class>
+    <portlet-class>cucumberflow.cucumberflow.com.cucumberflow</portlet-class>
 
     <supports>
       <mime-type>text/html</mime-type>

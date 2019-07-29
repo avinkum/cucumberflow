@@ -15,7 +15,7 @@
 
     <init-param>
       <param-name>portlet-class</param-name>
-      <param-value>cucumberflow.com.cucumberflow</param-value>
+      <param-value>cucumberflow.cucumberflow.com.cucumberflow</param-value>
     </init-param>
 
     <init-param>
